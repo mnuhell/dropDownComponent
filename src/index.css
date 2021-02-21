@@ -5,9 +5,68 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.dropdown{
+
+
+	padding: 0 1rem;
+}
+
+.dropdown--element {
+
+	align-items: center;
+	display: flex;
+	position: relative;
+
+	border-bottom: 1px solid #999;
+	cursor: pointer;
+	text-align: left;
+	padding: 1rem 0;
+
+}
+
+.dropdown--content{
+
+	padding-right: 6rem;
+	max-width: 320px;
+}
+
+.dropdown--title{
+	color: blue;
+	padding: .5rem 0;
+
+}
+
+.dropdown--body{
+
+	color: #999;
+	-webkit-transform: none;
+			transform: none;
+	transition: transform 300ms linear;
+
+}
+
+.dropdown--element_arrow{
+
+
+	padding: 0 1rem;
+	right: 0;
+	position: absolute;
+}
+
+.modalform{
+
+	min-width: 320px;
 }
